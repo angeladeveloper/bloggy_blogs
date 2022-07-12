@@ -2,6 +2,16 @@ const router = require('express').Router();
 const { Post } = require('../../models/index.model');
 const authorize = require('../../utils/auth');
 
+
+router.get('/', authorize, async (req, res) => {
+  try {
+    res.render('dashboard')
+  } catch (err) {
+    res.status(400).json(err);
+
+  }
+})
+
 router.post('/', authorize, async (req, res) => {
   try {
     const newPost = await Post.create({
