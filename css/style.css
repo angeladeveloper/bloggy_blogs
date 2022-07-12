@@ -16,7 +16,7 @@
 
 /* I always put a darker background color, its just easier on my eyes, feel free to change whenever.  */
 body {
-  background-color: rgba(2, 0, 0, 0.632);
+  background-color: rgba(0, 2, 10, 0.934);
 }
 
 /* These are only for the /kitten route, shouldn't affect anything else - except happiness  */
@@ -35,4 +35,26 @@ h1.kittens {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.navbar {
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(2, 73, 75, 0.739);
+}
+
+.navbar img {
+  width: 38px;
+}
+
+.container {
+  padding: 2rem;
+  background-color: #042a2b4f;
 }
