@@ -16,25 +16,22 @@
 
 /* I always put a darker background color, its just easier on my eyes, feel free to change whenever.  */
 body {
-  background-color: rgba(0, 2, 10, 0.934);
+  background-color: rgba(164, 164, 164, 0.934);
 }
 
-/* These are only for the /kitten route, shouldn't affect anything else - except happiness  */
-h1.kittens {
-  font-family: "Poppins", sans-serif;
-  background-color: aliceblue;
-  margin-top: 20px;
-  font-size: 3rem;
-  text-align: center;
-  padding: 5px;
-  color: var(--main_color);
-}
-.kitten {
-  padding: 10px;
+.login_page_container {
+  margin-top: 2rem;
+  width: 100vw;
   display: flex;
   justify-content: center;
+  gap: 20px;
+}
+
+.signup_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  border-radius: 10px;
 }
 
 .main {
@@ -57,4 +54,22 @@ h1.kittens {
 .container {
   padding: 2rem;
   background-color: #042a2b4f;
+}
+
+/* These are only for the /kitten route, shouldn't affect anything else - except happiness  */
+h1.kittens {
+  font-family: "Poppins", sans-serif;
+  background-color: aliceblue;
+  margin-top: 20px;
+  font-size: 3rem;
+  text-align: center;
+  padding: 5px;
+  color: var(--main_color);
+}
+.kitten {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
