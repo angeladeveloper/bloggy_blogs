@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const { Post, User } = require('../models/index.model');
 const authorize = require('../utils/auth');
-const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
@@ -33,7 +32,7 @@ router.get('/post/:id', async (req, res) => {
   }
 });
 
-// Use withAuth middleware to prevent access to route
+
 router.get('/profile', authorize, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
