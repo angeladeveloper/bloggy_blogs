@@ -39,7 +39,7 @@ const signup_route = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace('/dashboard');
     } else {
       alert(response.statusText);
     }
@@ -47,9 +47,9 @@ const signup_route = async (event) => {
 };
 
 document
-  .querySelector('.login-form')
+  .querySelector('#login-form')
   .addEventListener('submit', login_route);
 
 document
-  .querySelector('.signup-form')
+  .querySelector('#sign_up_form')
   .addEventListener('submit', signup_route);
