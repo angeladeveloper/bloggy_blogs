@@ -27,14 +27,14 @@ const login_route = async (event) => {
 const signup_route = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector('#name-signup').value.trim();
-  const email = document.querySelector('#email-signup').value.trim();
-  const password = document.querySelector('#password-signup').value.trim();
+  const first_name = document.querySelector('#first_name_su').value.trim();
+  const email = document.querySelector('#email_su').value.trim();
+  const password = document.querySelector('#password_su').value.trim();
 
-  if (name && email && password) {
+  if (first_name && email && password) {
     const response = await fetch('/api/users', {
       method: 'POST',
-      body: JSON.stringify({ name, email, password }),
+      body: JSON.stringify({ first_name, email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
 
