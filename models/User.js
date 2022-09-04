@@ -1,16 +1,10 @@
 
-
+const mongoose = require('mongoose');
 const { Schema, model } = require('mongoose');
 
-// Schema to create Student model
 const userSchema = new Schema(
   {
-    first: {
-      type: String,
-      required: true,
-      max_length: 50,
-    },
-    last: {
+    username: {
       type: String,
       required: true,
       max_length: 50,
@@ -40,20 +34,7 @@ const userSchema = new Schema(
   }
 );
 
-// Create a virtual property `commentCount` that gets the amount of comments per user
-// userSchema
-//   .virtual('fullName')
-//   // Getter
-//   .get(function () {
-//     return `${this.first} ${this.last}`;
-//   })
-//   // Setter to set the first and last name
-//   .set(function (v) {
-//     const first = v.split(' ')[0];
-//     const last = v.split(' ')[1];
-//     this.set({ first, last });
-//   });
 
-const User = model('user', userSchema);
+const User = new mongoose.model('user', userSchema);
 
 module.exports = User;

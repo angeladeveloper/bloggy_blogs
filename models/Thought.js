@@ -1,6 +1,6 @@
 
 
-const { Schema, model } = require('mongoose');
+const { Schema, model, default: mongoose } = require('mongoose');
 const ReactionSchema = require('./Reaction');
 
 // Schema to create Student model
@@ -17,12 +17,11 @@ const thoughtSchema = new Schema(
     },
     username: {
       type: String,
-      required: true,
+      ref: 'User',
     },
-    reactions: [reactionSchema],
   },
 );
 
-const Thought = model('thought', thoughtSchema);
+const Thought = new mongoose.model('thought', thoughtSchema);
 
 module.exports = Thought;
