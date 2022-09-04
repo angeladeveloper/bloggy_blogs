@@ -1,37 +1,24 @@
 {
-  "name": "med-for-me",
-  "version": "0.0.2",
-  "description": "an app for tracking personal medications and side affects. ",
-  "main": "server.js",
+  "name": "bloggy_blog",
+  "version": "1.0.0",
+  "description": "MongoDB is a popular choice for many social networks due to its speed with large\r amounts of data and flexibility with unstructured data.\r Over the last part of this course,\r you’ll use several of the\r technologies that social networking platforms use in their full-stack\r applications. Because the foundation of these\r applications is data, it’s important that you\r understand how to build and structure the API first.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "seed": "node seeds/seed.js"
-  },
-  "dependencies": {
-    "bcrypt": "^5.0.0",
-    "connect-session-sequelize": "^7.0.4",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^5.2.0",
-    "express-session": "^1.17.1",
-    "mysql2": "^2.2.5",
-    "nodemon": "^2.0.19",
-    "sequelize": "^6.3.5"
-  },
-  "devDependencies": {
-    "eslint": "^7.12.1",
-    "eslint-config-prettier": "^6.15.0",
-    "prettier": "^2.1.2"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angeladeveloper/med-for-me.git"
+    "url": "git+https://github.com/angeladeveloper/bloggy_blogs.git"
   },
-  "author": "AngelaDeveloper, LeahFries, neiman924, SEAexe, Wushuangster",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/angeladeveloper/med-for-me/issues"
+    "url": "https://github.com/angeladeveloper/bloggy_blogs/issues"
   },
-  "homepage": "https://github.com/angeladeveloper/med-for-me#readme"
+  "homepage": "https://github.com/angeladeveloper/bloggy_blogs#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.4"
+  }
 }
